@@ -1,0 +1,7 @@
+[
+{"stunav":"首页","isclick":false,"action":"first"},
+{"stunav":"学生信息","isclick":false,"navchild":[{"childname":"学生信息浏览","action":"browse"},{"childname":"分类查询学生信息","action":"search"},{"childname":"查询学生详细信息","action":"stuinfo"},{"childname":"删除学生信息","action":"delete"}]},
+{"stunav":"成绩信息","isclick":false,"navchild":[{"childname":"所有学生成绩","action":"allscore"},{"childname":"查找个人成绩","action":"searchscore"},{"childname":"挂科学生成绩成绩","action":"unpassscore"},{"childname":"删除学生成绩成绩","action":"deletescore"}]},
+{"stunav":"学校教学安排","isclick":false,"navchild":[{"childname":"培养计划","action":"plan"}]},
+{"stunav":"公用信息","isclick":false,"navchild":[{"childname":"教务信息","action":"teachinfo"}]}
+]

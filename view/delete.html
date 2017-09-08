@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>删除学生信息</title>
+</head>
+<body>
+<div class="col-lg-12 col-md-12 col-xs-12 first_top">
+    <span class="home glyphicon glyphicon-home"></span><span>当前位置</span><span>></span><span>删除学生信息</span>
+</div>
+<div class="col-lg-12 col-md-12 col-xs-12 first_body">
+    <p class="body_title">删除学生信息</p>
+    <table class="body_table">
+        <tr>
+            <td>班级</td>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>人数</td>
+        </tr>
+        <tr ng-repeat="data in num">
+            <td>{{data.num}}<span ng-click="deleteinfo(data.num)" class="delete">×</span></td>
+            <td>
+                <ul>
+                    <li ng-repeat="a in data.pc">
+                        {{a.id}}<span ng-click="deleteinfo(data.num,a.id)" class="delete">×</span>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li ng-repeat="a in data.pc">
+                        {{a.name}}
+                    </li>
+                </ul>
+            </td>
+            <td>{{data.count}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

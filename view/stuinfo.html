@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生个人信息</title>
+</head>
+<body>
+<div class="col-lg-12 col-md-12 col-xs-12 first_top">
+    <span class="home glyphicon glyphicon-home"></span><span>当前位置</span><span>></span><span>查询学生详细信息</span>
+</div>
+<div class="col-lg-12 col-md-12 col-xs-12 first_body">
+    <p class="body_title">学生信息查询</p>
+    <div class="col-lg-12 col-md-12 col-xs-12 choose">
+        <input class="idinput" type="text" placeholder="请输入学号" ng-model="id">
+        <button ng-click="btn_search()" class="btn btn-info">查找</button>
+    </div>
+    <div ng-show="isshow" class="col-lg-12 col-md-12 col-xs-12 myinfobody">
+        <div class="myinfo_left">
+            <img src="./images/{{infomation.img}}" alt="">
+        </div>
+        <div class="myinfo_right">
+            <p><span>姓名：</span><input type="text" ng-disabled="isdisabled" ng-model="infomation.name"></p>
+            <p><span>性别：</span><input type="text" ng-disabled="isdisabled" ng-model="infomation.sex"></p>
+            <p><span>年龄：</span><input type="text" ng-disabled="isdisabled" ng-model="infomation.age"></p>
+            <p><span>班级：</span><input type="text" ng-disabled="isdisabled" ng-model="infomation.class"></p>
+            <p><span>学号：</span><input type="text" ng-disabled="true" ng-model="infomation.id"></p>
+        </div>
+        <!--编辑学生个人信息-->
+        <button ng-click="chage_btn()" class="btn btn-info info_btn1">编辑</button>
+        <button ng-click="save_btn()" class="btn btn-info info_btn2">保存</button>
+    </div>
+</div>
+</body>
+</html>

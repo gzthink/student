@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>挂科学生成绩</title>
+</head>
+<body>
+<div class="col-lg-12 col-md-12 col-xs-12 first_top">
+    <span class="home glyphicon glyphicon-home"></span><span>当前位置</span><span>></span><span>挂科学生成绩</span>
+</div>
+<div class="col-lg-12 col-md-12 col-xs-12 first_body">
+    <p class="body_title">挂科学生成绩</p>
+    <table class="body_table">
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>班级</td>
+            <td>Math(分)</td>
+            <td>javascript(分)</td>
+            <td>history(分)</td>
+            <td>english(分)</td>
+            <td>angular(分)</td>
+            <td>jquery(分)</td>
+        </tr>
+        <tr ng-repeat="data in score">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.class}}</td>
+            <td class="iscolor" ng-class="{iswhite:data.math<60?iswhite=false:iswhite=true}">{{data.math}}</td>
+            <td class="iscolor" ng-class="{iswhite:data.javascript<60?iswhite=false:iswhite=true}">{{data.javascript}}</td>
+            <td class="iscolor" ng-class="{iswhite:data.history<60?iswhite=false:iswhite=true}">{{data.history}}</td>
+            <td class="iscolor" ng-class="{iswhite:data.english<60?iswhite=false:iswhite=true}">{{data.english}}</td>
+            <td class="iscolor" ng-class="{iswhite:data.angular<60?iswhite=false:iswhite=true}">{{data.angular}}</td>
+            <td class="iscolor" ng-class="{iswhite:data.jquery<60?iswhite=false:iswhite=true}">{{data.jquery}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+{"name":[{"action":"男"},{"action":"女"}]},
+{"name":[{"action":"0-20"},{"action":"20-30"}]},
+{"name":[{"action":"140213"},{"action":"140214"},{"action":"140215"},{"action":"140216"}]}
+]

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查找个人成绩</title>
+</head>
+<body>
+<div class="col-lg-12 col-md-12 col-xs-12 first_top">
+    <span class="home glyphicon glyphicon-home"></span><span>当前位置</span><span>></span><span>查找学生个人成绩</span>
+</div>
+<div class="col-lg-12 col-md-12 col-xs-12 first_body">
+    <p class="body_title">查找学生个人成绩</p>
+    <div class="col-lg-12 col-md-12 col-xs-12 choose">
+        <input class="idinput" type="text" placeholder="请输入学号" ng-model="id">
+        <button ng-click="searchscore()" class="btn btn-info">查找</button>
+        <button ng-click="confirm_change()" class="btn btn-info">确认修改</button>
+    </div>
+    <table class="body_table">
+        <tr>
+            <td class="w50">学号</td>
+            <td class="w50">姓名</td>
+            <td class="w50">班级</td>
+            <td>Math(分)</td>
+            <td>javascript(分)</td>
+            <td>history(分)</td>
+            <td>english(分)</td>
+            <td>angular(分)</td>
+            <td>jquery(分)</td>
+        </tr>
+        <tr>
+            <td class="w50">{{stugrade.id}}</td>
+            <td class="w50">{{stugrade.name}}</td>
+            <td class="w50">{{stugrade.class}}</td>
+            <td><input class="inputstyle" type="text"ng-class="{iscolor:stugrade.math<60?iscolor=true:iscolor=false}" ng-click="grageclick()" ng-model="stugrade.math"></td>
+            <td><input class="inputstyle" type="text"ng-class="{iscolor:stugrade.javascript<60?iscolor=true:iscolor=false}" ng-click="grageclick()" ng-model="stugrade.javascript"></td>
+            <td><input class="inputstyle" type="text"ng-class="{iscolor:stugrade.history<60?iscolor=true:iscolor=false}" ng-click="grageclick()" ng-model="stugrade.history"></td>
+            <td><input class="inputstyle" type="text"ng-class="{iscolor:stugrade.english<60?iscolor=true:iscolor=false}" ng-click="grageclick()" ng-model="stugrade.english"></td>
+            <td><input class="inputstyle" type="text"ng-class="{iscolor:stugrade.angular<60?iscolor=true:iscolor=false}" ng-click="grageclick()" ng-model="stugrade.angular"></td>
+            <td><input class="inputstyle" type="text"ng-class="{iscolor:stugrade.jquery<60?iscolor=true:iscolor=false}" ng-click="grageclick()" ng-model="stugrade.jquery"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

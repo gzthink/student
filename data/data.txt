@@ -1,0 +1,22 @@
+[
+  {"menu":"管理主菜单","child":[
+     {"stuaction":"学生信息菜单","isclick":false,"stuactionchild":[
+                                                    {"stuinfo":"学生信息","action":"studata"},
+                                                    {"stuinfo":"学生分类","action":"stutype"},
+                                                    {"stuinfo":"个人信息","action":"pcinfo"},
+                                                    {"stuinfo":"删除信息","action":"deleteinfo"}
+                                                  ]},
+  {"stuaction":"成绩信息菜单","isclick":false,"stuactionchild":[
+                                                 {"stuinfo":"所有学生成绩","action":"allstudgrade"},
+                                                 {"stuinfo":"查找个人成绩","action":"pcstudgrade"},
+                                                 {"stuinfo":"挂科学生成绩","action":"gstudgrade"},
+                                                 {"stuinfo":"删除个人成绩","action":"destudgrade"}
+                                               ]},
+  {"stuaction":"学校教学安排","isclick":false,"stuactionchild":[
+                                                {"stuinfo":"培养计划","action":"pyjh"},
+                                                {"stuinfo":"课表","action":"kb"},
+                                                {"stuinfo":"教导员安排","action":"jdyap"},
+                                                {"stuinfo":"旷课处分安排","action":"kkcf"}
+                                               ]}
+  ]}
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询学生信息</title>
+</head>
+<body>
+<div class="col-lg-12 col-md-12 col-xs-12 first_top">
+    <span class="home glyphicon glyphicon-home"></span><span>当前位置</span><span>></span><span>分类浏览学生信息</span>
+</div>
+<div class="col-lg-12 col-md-12 col-xs-12 first_body">
+    <p class="body_title">学生信息查询</p>
+    <div class="col-lg-12 col-md-12 col-xs-12 choose">
+        类别：
+        <select ng-change="changeinfo()" ng-model="selecttext">
+            <option value="">--请选择--</option>
+            <option value="0">---性别---</option>
+            <option value="1">---年龄---</option>
+            <option value="2">---班级---</option>
+        </select>
+        <select ng-model="selectinfo">
+            <option value="">--请选择--</option>
+            <option ng-repeat="a in text.name">{{a.action}}</option>
+        </select>
+        <button ng-click="startsearch(selectinfo)" class="btn btn-info">查找</button>
+    </div>
+    <table class="body_table">
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+            <td>班级</td>
+        </tr>
+        <tr ng-repeat="data in selectstu">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.sex}}</td>
+            <td>{{data.age}}</td>
+            <td>{{data.class}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

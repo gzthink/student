@@ -1,0 +1,175 @@
+body{
+    width:100%;
+    height:100%;
+}
+.wrap{
+    padding-left:0;
+    padding-right:0;
+}
+.head{
+    width:100%;
+    overflow:hidden;
+    background: rgba(59, 120, 202, 0.7);
+    padding:20px 10px;
+    color:#fff;
+}
+.top_title{
+    font-size:25px;
+    float:left;
+}
+ul{  margin:0;  }
+li{  text-align:center;  }
+a,a:hover,a:visited,a:link{text-decoration:none;}
+.nav1{
+    background: rgba(33, 162, 192, 0.64);
+    color:#fff;
+    padding-top:10px;
+    padding-bottom:10px;
+    cursor:pointer;
+}
+.nav1:hover{
+    background: rgba(35, 181, 211, 0.64);
+}
+.nav1 a{color:#fff;}
+ul{
+    list-style-type: none;
+    -webkit-padding-start:0px;
+}
+
+.first_top{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.first_top span{
+    margin-left:5px;
+}
+.first_body{
+    border:1px solid #23b5d3;
+    /*height:auto;*/
+    padding:10px;
+    overflow-y:scroll;
+    height:400px;
+}
+.body_title{
+    background:rgba(35, 181, 211, 0.64);
+    color:#fff;
+    padding-top:5px;
+    padding-left:10px;
+    padding-bottom:5px;
+    border-radius:5px 5px 0 0;
+    margin-bottom:5px;
+}
+.body_table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid silver;
+}
+.body_table td{
+    text-align:center;
+    border:1px solid silver;
+    line-height:30px;
+}
+.welcome_text{  padding-top:20px;  }
+
+.student{
+    width:50%;
+    height:auto;
+    padding:20px;
+    position:absolute;
+    top:30%;
+    left:20%;
+    z-index:2;
+    border:1px solid #ccc;
+    background:#fff;
+}
+.student_left{
+    width:40%;
+    float:left;
+}
+.student_left img{
+    width:200px;
+    height:200px;
+    border:1px solid #ccc;
+}
+.student_right{
+    width:60%;
+    float:right;
+}
+.close{
+    font-size:30px;
+    width:30px;
+    line-height:30px;
+    outline:none;
+}
+.close:hover{color:red;}
+.blue{background:rgba(35, 181, 211, 0.64);}
+.choose{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.choose select{
+    height:35px;
+}
+
+.myinfobody{
+    width:100%;
+    height:270px;
+    padding-top:25px;
+}
+.myinfo_left{
+    width:20%;
+    float:left;
+}
+.myinfo_left img{
+    width:200px;
+    height:200px;
+}
+.myinfo_right{
+    width:80%;
+    float:right;
+    padding-top:20px;
+}
+.myinfo_right input{
+    border:none;
+    outline:none;
+    background:#fff;
+}
+.idinput{
+    padding:5px;
+}
+.info_btn1{  margin-left:25%;  }
+.info_btn2{  margin-left:2%;  }
+.delete{
+    color:red;
+    font-size:20px;
+    margin-left:5px;
+    cursor:pointer;
+}
+.iscolor{
+    color:red;
+    font-weight:bold;
+}
+.iswhite{
+    color:#fff;
+}
+.deletescore{
+    color:red;
+    margin-left:2px;
+    cursor:pointer;
+}
+.plantext{
+    line-height:40px;
+    padding-left:15px;
+    padding-right:15px;
+}
+td{text-align:center;}
+.inputstyle{
+    outline:none;
+    border:none;
+    background:#fff;
+    text-align:center;
+    width:30%;
+}
+.w50{
+    width:10%;
+}

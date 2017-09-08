@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息浏览</title>
+</head>
+<body>
+<div class="col-lg-12 col-md-12 col-xs-12 first_top">
+    <span class="home glyphicon glyphicon-home"></span><span>当前位置</span><span>></span><span>学生信息浏览</span>
+</div>
+<div ng-show="isshow" class="student">
+    <p><button ng-click="closeinfo()" class="close">×</button></p>
+    <div class="student_left">
+        <img src="./images/{{infomation.img}}" alt="">
+    </div>
+    <div class="student_right">
+        <p><span>姓名：</span><span>{{infomation.name}}</span></p>
+        <p><span>性别：</span><span>{{infomation.sex}}</span></p>
+        <p><span>年龄：</span><span>{{infomation.age}}</span></p>
+        <p><span>班级：</span><span>{{infomation.class}}</span></p>
+        <p><span>学号：</span><span>{{infomation.id}}</span></p>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-xs-12 first_body">
+    <p class="body_title">学生信息浏览</p>
+    <table class="body_table">
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+            <td>班级</td>
+        </tr>
+        <tr ng-click="clicktr(data,$index)" ng-class="{blue:data.iscolor}" ng-repeat="data in stuinformation">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.sex}}</td>
+            <td>{{data.age}}</td>
+            <td>{{data.class}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
